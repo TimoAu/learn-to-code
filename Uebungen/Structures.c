@@ -1,11 +1,12 @@
-#include<stdio.h>
-int main(){
-    struct struktur{
+#include <stdio.h>
+typedef struct{
         int i1;
         float f1;
         char c1;
-    };
-    struct struktur st1;
+    }struktur;
+int main(){
+   
+    struktur st1;
     st1.i1 = 200;
     st1.f1 = 3.3333;
     st1.c1 ='a';

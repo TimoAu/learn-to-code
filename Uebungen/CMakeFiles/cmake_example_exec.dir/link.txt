@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/cmake_example_exec.dir/cmake.c.o -o cmake_example_exec 

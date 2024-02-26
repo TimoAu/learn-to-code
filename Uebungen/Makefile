@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cmake_exaple_exec
+# Target rules for targets named cmake_example_exec
 
 # Build rule for target.
-cmake_exaple_exec: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_exaple_exec
-.PHONY : cmake_exaple_exec
+cmake_example_exec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_example_exec
+.PHONY : cmake_example_exec
 
 # fast build rule for target.
-cmake_exaple_exec/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_exaple_exec.dir/build.make CMakeFiles/cmake_exaple_exec.dir/build
-.PHONY : cmake_exaple_exec/fast
+cmake_example_exec/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_exec.dir/build.make CMakeFiles/cmake_example_exec.dir/build
+.PHONY : cmake_example_exec/fast
 
 cmake.o: cmake.c.o
 .PHONY : cmake.o
 
 # target to build an object file
 cmake.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_exaple_exec.dir/build.make CMakeFiles/cmake_exaple_exec.dir/cmake.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_exec.dir/build.make CMakeFiles/cmake_example_exec.dir/cmake.c.o
 .PHONY : cmake.c.o
 
 cmake.i: cmake.c.i
@@ -142,7 +142,7 @@ cmake.i: cmake.c.i
 
 # target to preprocess a source file
 cmake.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_exaple_exec.dir/build.make CMakeFiles/cmake_exaple_exec.dir/cmake.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_exec.dir/build.make CMakeFiles/cmake_example_exec.dir/cmake.c.i
 .PHONY : cmake.c.i
 
 cmake.s: cmake.c.s
@@ -150,7 +150,7 @@ cmake.s: cmake.c.s
 
 # target to generate assembly for a file
 cmake.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_exaple_exec.dir/build.make CMakeFiles/cmake_exaple_exec.dir/cmake.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_exec.dir/build.make CMakeFiles/cmake_example_exec.dir/cmake.c.s
 .PHONY : cmake.c.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cmake_exaple_exec"
+	@echo "... cmake_example_exec"
 	@echo "... cmake.o"
 	@echo "... cmake.i"
 	@echo "... cmake.s"

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/learn-to-code",
-      "program": "/workspaces/learn-to-code/build/Debug/outDebug",
+      "cwd": "/workspaces/learn-to-code/Uebungen",
+      "program": "/workspaces/learn-to-code/Uebungen/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

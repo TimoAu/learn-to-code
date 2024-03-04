@@ -1,0 +1,3 @@
+/workspaces/learn-to-code/Hausaufgaben/Hausaufgabe_1.4/Student_Struct/CMakeFiles/student_struct_exec.dir
+/workspaces/learn-to-code/Hausaufgaben/Hausaufgabe_1.4/Student_Struct/CMakeFiles/edit_cache.dir
+/workspaces/learn-to-code/Hausaufgaben/Hausaufgabe_1.4/Student_Struct/CMakeFiles/rebuild_cache.dir

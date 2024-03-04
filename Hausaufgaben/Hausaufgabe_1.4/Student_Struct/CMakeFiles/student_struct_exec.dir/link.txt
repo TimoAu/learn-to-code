@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/student_struct_exec.dir/Student.c.o -o student_struct_exec 

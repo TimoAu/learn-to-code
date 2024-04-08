@@ -1,3 +1,0 @@
-/workspaces/learn-to-code/Uebungen/CMakeFiles/cmake_example_exec.dir
-/workspaces/learn-to-code/Uebungen/CMakeFiles/edit_cache.dir
-/workspaces/learn-to-code/Uebungen/CMakeFiles/rebuild_cache.dir

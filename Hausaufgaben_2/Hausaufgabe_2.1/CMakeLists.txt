@@ -16,12 +16,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
 
 # add a library for your student structure
-add_library(student_struct src/student.c)
+add_library(student_struct src/student.cpp)
 # add the includes to the library
 target_include_directories(student_struct PUBLIC include)
 
 # add an executabel and assign files to it
-add_executable(student_struct_hw7_exec src/main.c)
+add_executable(student_struct_hw7_exec src/main_2.1.cpp)
 
 # add include directories to executable
 target_include_directories(student_struct_hw7_exec PRIVATE include)

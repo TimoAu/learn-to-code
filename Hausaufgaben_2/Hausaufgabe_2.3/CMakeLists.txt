@@ -16,22 +16,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
 
 # add a library for your student structure
-add_library(student_struct src/student.cpp)
+add_library(animal_class src/animal_class.cpp)
 # add the includes to the library
-target_include_directories(student_struct PUBLIC include)
+target_include_directories(animal_class PUBLIC include)
 
 # add an executabel and assign files to it
-add_executable(student_struct_hw7_exec src/main_2.1.cpp)
+add_executable(hw3_exec src/main_2.3.cpp)
 
 # add include directories to executable
-target_include_directories(student_struct_hw7_exec PRIVATE include)
+target_include_directories(hw3_exec PRIVATE include)
 # link your libraries
-target_link_libraries(student_struct_hw7_exec PRIVATE student_struct)
+target_link_libraries(hw3_exec PRIVATE animal_class)
 enable_testing()
 find_package(GTest REQUIRED)
 include(GoogleTest)
-add_executable(tests test/test_student_struct.cpp)
+add_executable(tests test/test_animal_class.cpp)
 target_link_libraries(tests PRIVATE GTest::GTest GTest::Main)
-target_link_libraries(tests PRIVATE student_struct)
+target_link_libraries(tests PRIVATE animal_class)
 target_include_directories(tests PUBLIC include)
 gtest_discover_tests(tests)

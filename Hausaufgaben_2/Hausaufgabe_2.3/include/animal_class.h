@@ -12,6 +12,6 @@ class spider : public animal{
 class mamal : public animal
 {
     public:
-    mamal();
+    mamal(int init_number_feet);
 };
 #endif

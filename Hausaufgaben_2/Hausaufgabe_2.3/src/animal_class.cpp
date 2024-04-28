@@ -1,6 +1,6 @@
-#include "animal_class"
+#include "animal_class.h"
 
-animal:: int get_number_feet(){
+int animal::get_number_feet(){
     return number_feet;
 }
 spider:: spider(){

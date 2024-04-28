@@ -6,9 +6,12 @@ class animal{
     int get_number_feet();
 };
 class spider : public animal{
-    void spider();
+    public:
+    spider();
 };
-class mamal : public animal{
-    void mamal();
+class mamal : public animal
+{
+    public:
+    mamal();
 };
 #endif

@@ -3,7 +3,9 @@
 class animal{
     public:
     int number_feet;
+    float speed;
     int get_number_feet();
+    virtual float position(float time)=0;
 };
 class spider : public animal{
     public:

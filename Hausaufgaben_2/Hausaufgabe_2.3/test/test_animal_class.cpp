@@ -25,3 +25,9 @@ TEST_F(animalTest, spider_move){
 TEST_F(animalTest, mamal_move){
     ASSERT_EQ(50, testMamal.move(test_time));
 }
+/*TEST_F(animalTest, number_feet_spider){
+    ASSERT_EQ(8, testSpider.get_number_feet());
+}
+TEST_F(animalTest, number_feet_mamal){
+    ASSERT_EQ(4, testMamal.get_number_feet());
+}*/

@@ -7,21 +7,21 @@ class animalTest :public ::testing ::Test
     protected:
     float speed = 5;
     float test_time = 10;
-    spider testSpider(speed);
-    mamal testMamal(4, speed);
+    spider testSpider= spider(speed);
+    mamal testMamal= mamal(4, speed);
     /*float test_move_spider(){
-        return testSpider.move(test_time);
+        testSpider.move(test_time);
+        return testSpider.position;
     }
     float test_move_mamal(){
-        return testMamal.move(test_time);
+        testMamal.move(test_time);
+        return testMamal.position;
     }*/
-         
-   
 };
 
 TEST_F(animalTest, spider_move){
-    ASSERT_EQ(50, animalTest.move(test_time));
+    ASSERT_EQ(50, testSpider.move(test_time));
 }
 TEST_F(animalTest, mamal_move){
-    ASSERT_EQ(50, animalTest.);
+    ASSERT_EQ(50, testMamal.move(test_time));
 }

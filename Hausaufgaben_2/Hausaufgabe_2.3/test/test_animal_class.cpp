@@ -4,7 +4,7 @@ int feet_init = 4;
 class animalTest :public ::testing ::Test
 {
     protected:
-    //spider testSpider;
+    spider testSpider;
     int mamal_init()
     {
         mamal testMamal(4);

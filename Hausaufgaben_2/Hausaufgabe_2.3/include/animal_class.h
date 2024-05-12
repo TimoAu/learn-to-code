@@ -1,24 +1,6 @@
 #ifndef ANIMAL_CLASS
 #define ANIMAL_CLASS
-class animal{
-    public:
-    int number_feet;
-    float speed;
-    int get_number_feet();
-    virtual float position(float time)=0;
-    static void die();
-};
-class spider : public animal{
-    public:
-    spider();
-    ~spider();
-    float position(float time, float position);
-};
-class mamal : public animal
-{
-    public:
-    mamal(int init_number_feet);
-    ~mamal();
-    float position(float time, float position);
-};
+class animal;
+class mamal;
+class spider; 
 #endif

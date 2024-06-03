@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # add some compile options
-add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
+add_compile_options(-Wall -Wextra -Werror -pedantic -O0 )
 
 # add a library for your student structure
 #add_library(animal_class src/animal_class.cpp)
@@ -37,8 +37,20 @@ add_compile_options(-Wall -Wextra -Werror -pedantic -O0)
 #gtest_discover_tests(tests)
 find_package( OpenCV)
 if(OpenCV_FOUND)
-    add_executale(opencv_hello hello_world.cpp)
-    target_include_directories(opencv_hello PUBLIC $ {OpenCV_INCLUDE_DIRS})
-    target_link_libraries( opencv_hello ${OpenCV_LIBRARIES})
-    target_compile_definitions(opencv_hello PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+    
+    #target_compile_definitions(opencv_plot PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+    #target_compile_definitions(opencv_plot PRIVATE IMGPATH="${CMAKE_CURRENT_LIST_DIR}" OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+        # download CvPlot library and add it to the project
+        include(FetchContent)
+    FetchContent_Declare(cvplot
+        GIT_REPOSITORY https://github.com/Profactor/cv-plot.git
+        GIT_TAG origin/master) # or whatever tag you want
+    FetchContent_GetProperties(cvplot)
+    #if(NOT cvplot_POPULATED)
+        set(CVPLOT_USE_CONAN FALSE)
+        FetchContent_Populate(cvplot)
+    add_executable(opencv_cvplot CvPlot.cpp)
+    target_include_directories(opencv_cvplot PUBLIC $ {OpenCV_INCLUDE_DIRS} ${cvplot_SOURCE_DIR}/CvPlot/inc)
+    target_link_libraries( opencv_cvplot ${OpenCV_LIBRARIES})
+   #endif()
 endif()
